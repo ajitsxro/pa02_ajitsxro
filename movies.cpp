@@ -49,6 +49,7 @@ std::string MovieDatabase::processPrefix(const std::string& prefix) const {
     for (const auto& movie : matches) {
         std::cout << movie.name << ", " << std::fixed << std::setprecision(1) << movie.rating << std::endl;
     }
+    std::cout << std::endl;  // Blank line after each prefix's movies
     
     std::ostringstream best;
     best << "Best movie with prefix " << prefix << " is: " << matches[0].name 

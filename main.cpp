@@ -134,3 +134,4 @@ bool parseLine(string &line, string &movieName, double &movieRating) {
     }
     return true;
 }
+
